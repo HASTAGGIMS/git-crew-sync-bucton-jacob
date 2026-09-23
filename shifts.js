@@ -2,8 +2,8 @@ function isValidShift(hours) {
   return hours > 0 && hours <= 24;
 }
 
-function calculatePay(hours, rate) {
-  return Math.floor(hours * rate);
+function calculatePay(hoursWorked, hourlyRate) {
+  return Math.round(hoursWorked * hourlyRate);
 }
 
 module.exports = { isValidShift, calculatePay };
